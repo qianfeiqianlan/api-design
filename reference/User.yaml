@@ -122,18 +122,17 @@ paths:
               properties:
                 firstName:
                   type: string
+                  minLength: 3
+                  maxLength: 12
                 lastName:
                   type: string
+                  maxLength: 16
+                  minLength: 6
                 email:
                   type: string
                 dateOfBirth:
                   type: string
                   format: date
-              required:
-                - firstName
-                - lastName
-                - email
-                - dateOfBirth
             examples:
               Create User Bob Fellow:
                 value:
